@@ -54,11 +54,7 @@ $(function() {
 
         // データベースに投稿を追加
 
-            postsRef.push({ 
-                author: "投稿者名", 
-                content: "投稿内容", 
-                timestamp: Date.now() 
-                })
+            postsRef.push(postData)
         // 行末に 「;」 を付けないこと
 
             .then(function() {
